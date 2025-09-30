@@ -5,8 +5,12 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import lombok.Builder;
+import lombok.Getter;
 import org.hibernate.annotations.UuidGenerator;
 
+@Getter
+@Builder
 @Entity
 @Table(name = "notification")
 public class Notification {
